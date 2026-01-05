@@ -2,120 +2,189 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>T0D0 N0T1C1AS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T0D0 N0T1C1AS</title>
+
 <style>
-body {margin:0; font-family:Arial,sans-serif; background:#0f0f0f; color:#eee;}
-header{background:#000; padding:25px; border-bottom:4px solid #00ff99; text-align:center;}
-header h1{color:#00ff99; letter-spacing:4px; margin:5px 0;}
-header p{margin:5px 0;}
-nav{background:#1a1a1a; text-align:center; padding:12px;}
-nav a{color:#eee; margin:0 10px; text-decoration:none; font-weight:bold;}
-nav a:hover{color:#00ff99;}
-section{padding:20px; margin:20px; background:#1a1a1a; border-radius:10px;}
-h2{color:#00ff99; margin-top:0;}
-.article{display:flex; align-items:flex-start; margin:12px 0;}
-.article img{width:120px; height:80px; object-fit:cover; border-radius:6px; margin-right:12px;}
-.article div{max-width:calc(100% - 130px);}
-a.btn{display:inline-block; margin:10px 0; padding:12px 18px; background:#00ff99; color:#000; font-weight:bold; border-radius:8px; text-decoration:none;}
-a.btn:hover{background:#00cc77;}
-footer{text-align:center; padding:20px; color:#888; font-size:14px;}
-@media (max-width:600px){
- header img{max-width:120px; width:80%;}
- .article{flex-direction:column; align-items:center;}
- .article img{margin-right:0; margin-bottom:8px;}
- .article div{max-width:100%;}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+header {
+  background: #000;
+  padding: 15px;
+  text-align: center;
+}
+
+header img {
+  max-width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 10px 0 0;
+  color: #00ff99;
+}
+
+.rating {
+  margin-top: 8px;
+  font-size: 18px;
+  color: gold;
+}
+
+.update {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #222;
+}
+
+h2 {
+  color: #00ff99;
+}
+
+.btn {
+  display: inline-block;
+  background: #00ff99;
+  color: #000;
+  padding: 10px 15px;
+  margin: 6px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  font-size: 14px;
+  color: #aaa;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<img src="logo.png" alt="T0D0 N0T1C1AS" style="max-width:160px;width:100%;height:auto;display:block;margin:auto;">
-<h1>T0D0 N0T1C1AS</h1>
-<p>🎮 Videojuegos | ⚽ Fútbol | 🌦️ Clima | ₿ Cripto | 💱 Economía</p>
+  <img src="logo_optimizado.png" alt="T0D0 N0T1C1AS">
+  <h1>T0D0 N0T1C1AS</h1>
+
+  <div class="rating">
+    ⭐⭐⭐⭐☆ 4.6 / 5
+  </div>
+
+  <div class="update">
+    Última actualización: Septiembre 2026
+  </div>
+
+  <p>Noticias, juegos, clima y economía en un solo lugar</p>
 </header>
 
-<nav>
-<a href="#noticias">Noticias</a>
-<a href="#videojuegos">Videojuegos</a>
-<a href="#futbol">Fútbol</a>
-<a href="#clima">Clima</a>
-<a href="#cripto">Cripto</a>
-<a href="#descargas">Descargas</a>
-<a href="#afiliados">Ofertas</a>
-<a href="#donaciones">Donaciones</a>
-</nav>
-
-<section id="noticias">
+<section>
 <h2>📰 Noticias Generales</h2>
-<div class="article">
-  <img src="https://picsum.photos/120/80?random=1" alt="Noticia">
-  <div>
-    <p>La economía global muestra signos de recuperación. <a href="https://news.google.com/topstories?hl=es-419&gl=AR" target="_blank">Leer más</a></p>
-  </div>
-</div>
+<p>Las noticias más importantes de Argentina y el mundo.</p>
+<a href="https://news.google.com" target="_blank" class="btn">Ver noticias</a>
 </section>
 
-<section id="videojuegos">
-<h2>🎮 Noticias de Videojuegos</h2>
-<div class="article">
-  <img src="https://picsum.photos/120/80?random=2" alt="Gamer">
-  <div>
-    <p>Se lanzó un nuevo RPG que promete horas de aventuras. <a href="https://news.google.com/search?q=videojuegos" target="_blank">Leer más</a></p>
-  </div>
-</div>
+<section>
+<h2>🎮 Videojuegos</h2>
+<p>Novedades, lanzamientos y actualidad del mundo gamer.</p>
 </section>
 
-<section id="futbol">
-<h2>⚽ Noticias de Fútbol</h2>
-<div class="article">
-  <img src="https://picsum.photos/120/80?random=3" alt="Fútbol">
-  <div>
-    <p>El último partido de la liga dejó grandes sorpresas. <a href="https://news.google.com/search?q=fútbol" target="_blank">Leer más</a></p>
-  </div>
-</div>
-</section>
-
-<section id="clima">
-<h2>🌦️ Clima Mundial</h2>
-<iframe src="https://www.meteoblue.com/es/tiempo/widget/daily?geoloc=detect&days=5&tempunit=CEL&windunit=KMH&layout=dark" 
-width="100%" height="400" frameborder="0" scrolling="no"></iframe>
-<p style="font-size:13px; color:#aaa;">Fuente: <a href="https://www.meteoblue.com" target="_blank" style="color:#00ff99;">meteoblue.com</a></p>
-</section>
-
-<section id="cripto">
-<h2>₿ Criptomonedas</h2>
-<div class="article">
-  <img src="https://picsum.photos/120/80?random=4" alt="Cripto">
-  <div>
-    <p>Bitcoin (BTC) cerca de $30,000 USD, Ethereum (ETH) sube ligeramente. <a href="https://www.coingecko.com/es" target="_blank">Ver precios</a></p>
-  </div>
-</div>
-</section>
-
-<section id="descargas">
-<h2>📥 Descargas / Enlaces</h2>
+<section>
+<h2>⚽ Fútbol</h2>
+<p>Actualidad del fútbol argentino e internacional.</p>
 <ul>
-  <li><a href="https://link-hub.net/2641451/LepqCRp8yZJa" target="_blank" class="btn">📄 Minecraft</a></li>
-  <li><a href="https://link-hub.net/2641451/mxRYN9Jq2avR" target="_blank" class="btn">📄 PVZ Fusión</a></li>
-  <li><a href="https://link-target.net/2641451/CiclJZDOu1wU" target="_blank" class="btn">📄 Spotify Premium</a></li>
+  <li>🇦🇷 Liga Argentina</li>
+  <li>🌍 Fútbol internacional</li>
 </ul>
 </section>
 
-<section id="donaciones">
-<h2>❤️ Apoyar el proyecto</h2>
-<p>Alias MercadoPago: <b>francisco.tlt</b><br>
-Instagram: <a href="https://instagram.com/franciscothiago202" target="_blank" style="color:#00ff99;">@franciscothiago202</a></p>
-Email: lopeztellofrancisco789@gmail.com
+<section>
+<h2>🌎 Clima Mundial</h2>
+<p>Pronóstico general por regiones.</p>
+<ul>
+  <li>🌤️ América</li>
+  <li>❄️ Europa</li>
+  <li>🔥 África</li>
+  <li>🌧️ Asia</li>
+</ul>
+<a href="https://www.weather.com" target="_blank" class="btn">Ver clima mundial</a>
+</section>
+
+<section>
+<h2>💰 Economía y Criptomonedas</h2>
+<ul>
+  <li>💵 Dólar a peso argentino</li>
+  <li>💶 Euro a dólar y peso</li>
+  <li>🪙 Bitcoin y criptomonedas</li>
+</ul>
+<a href="https://www.coingecko.com" target="_blank" class="btn">Ver precios cripto</a>
+</section>
+
+<section>
+<h2>📥 Descargas / Enlaces</h2>
+<p>Enlaces útiles y populares.</p>
+<ul>
+  <li><a href="https://cutt.ly/Atg7N61Y" target="_blank" class="btn">Minecraft</a></li>
+  <li><a href="https://cutt.ly/ttg70Qgb" target="_blank" class="btn">PVZ Fusión</a></li>
+  <li><a href="https://cutt.ly/btg72YqM" target="_blank" class="btn">Spotify Premium</a></li>
+</ul>
+</section>
+
+<section>
+<h2>📱 Contacto y Redes</h2>
+
+<p>
+📸 Instagram:
+<a href="https://instagram.com/franciscothiago202" target="_blank" style="color:#00ff99;">
+@franciscothiago202
+</a>
+</p>
+
+<p>
+▶️ YouTube:
+<a href="https://www.youtube.com/@franciscothiago202" target="_blank" style="color:#00ff99;">
+franciscothiago202
+</a>
+</p>
+
+<p>
+📧 Correo electrónico:<br>
+<a href="mailto:lopeztellofrancisco789@gmail.com" style="color:#00ff99;">
+lopeztellofrancisco789@gmail.com
+</a>
+</p>
+
+<p>Alias MercadoPago: <b>francisco.tlt</b></p>
+</section>
 
 <footer>
-© 2026 – T0D0 N0T1C1AS | Noticias y juegos en un solo lugar
+<p>© 2026 - T0D0 N0T1C1AS</p>
+
+<p style="font-size:13px; color:#aaa;">
+👀 Visitas totales:
+<img src="https://visitor-badge.laobi.icu/badge?page_id=t0d0n0t1c1as.github.io" alt="contador de visitas">
+</p>
 </footer>
 
 </body>
-</html>
-
-
-
-
+ </html>
