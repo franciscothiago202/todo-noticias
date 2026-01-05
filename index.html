@@ -18,8 +18,8 @@ header {
   text-align: center;
 }
 header img.logo-principal {
-  max-width: 250px;
   width: 60%;
+  max-width: 250px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -37,12 +37,8 @@ section {
   padding: 20px;
   border-bottom: 1px solid #222;
 }
-h2 {
-  color: #00ff99;
-}
-h3 {
-  color: #00ffaa;
-}
+h2 { color: #00ff99; }
+h3 { color: #00ffaa; }
 .btn {
   display: inline-block;
   background: #00ff99;
@@ -53,13 +49,8 @@ h3 {
   border-radius: 5px;
   font-weight: bold;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
-li {
-  margin-bottom: 10px;
-}
+ul { list-style: none; padding: 0; }
+li { margin-bottom: 10px; }
 footer {
   text-align: center;
   padding: 15px;
@@ -72,15 +63,27 @@ footer {
   text-align: center;
   padding: 15px;
 }
-.rating-box span {
-  font-size: 22px;
-  color: gold;
-}
+.rating-box span { font-size: 22px; color: gold; }
 .box {
   background: #111;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 15px;
+}
+/* ESCUDO FIJO */
+#escudo-afa {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: auto;
+  z-index: 9999;
+}
+/* ESCUDO OCULTO EN MOVILES */
+@media screen and (max-width: 600px) {
+  #escudo-afa {
+    display: none;
+  }
 }
 </style>
 </head>
@@ -88,103 +91,110 @@ footer {
 <body>
 
   <!-- ESCUDO ESTÁTICO EN ESQUINA IZQUIERDA -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Argentina_national_football_team_logo.png" 
-       alt="Escudo Selección Argentina" 
-       style="position:absolute; top:20px; left:20px; width:50px; height:auto;">
+  <img id="escudo-afa" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Argentina_national_football_team_logo.png" 
+       alt="Escudo Selección Argentina">
 
   <header>
-    <!-- LOGO PRINCIPAL -->
     <img src="logo_optimizado.png" alt="T0D0 N0T1C1AS" class="logo-principal">
     <h1>T0D0 N0T1C1AS</h1>
-
-    <div class="update">
-      Última actualización: Enero 2026
-    </div>
-
+    <div class="update">Última actualización: Enero 2026</div>
     <p>Noticias, juegos, clima y economía en un solo lugar</p>
   </header>
 
-  <!-- Tu código de anuncios y secciones de noticias y juegos -->
+  <!-- ANUNCIO 1 -->
   <script async="async" data-cfasync="false" src="https://pl28409941.effectivegatecpm.com/5f782ebbee9cad6bbb6bcf466bac0803/invoke.js"></script>
-<div id="container-5f782ebbee9cad6bbb6bcf466bac0803"></div>
-<script>
-  atOptions = {
-    'key' : 'de94e9f13e56aa02b4a0cf4b0bcfac22',
-    'format' : 'iframe',
-    'height' : 60,
-    'width' : 468,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/de94e9f13e56aa02b4a0cf4b0bcfac22/invoke.js"></script>
+  <div id="container-5f782ebbee9cad6bbb6bcf466bac0803"></div>
+  <script>
+    atOptions = {
+      'key' : 'de94e9f13e56aa02b4a0cf4b0bcfac22',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highperformanceformat.com/de94e9f13e56aa02b4a0cf4b0bcfac22/invoke.js"></script>
 
-<section>
-<h2>📰 Noticias Generales</h2>
-<p>Las noticias más importantes de Argentina y el mundo.</p>
-<a href="https://news.google.com" target="_blank" class="btn">Ver noticias</a>
-</section>
+  <section>
+    <h2>📰 Noticias Generales</h2>
+    <p>Las noticias más importantes de Argentina y el mundo.</p>
+    <a href="https://news.google.com" target="_blank" class="btn">Ver noticias</a>
+  </section>
 
-<section>
-<h2>🎮 Videojuegos (Noticias)</h2>
-<ul>
-  <li><a href="https://www.3djuegos.com" target="_blank" class="btn">3DJuegos</a></li>
-  <li><a href="https://vandal.elespanol.com" target="_blank" class="btn">Vandal</a></li>
-  <li><a href="https://www.ign.com/es" target="_blank" class="btn">IGN España</a></li>
-</ul>
-</section>
+  <section>
+    <h2>🎮 Videojuegos (Noticias)</h2>
+    <ul>
+      <li><a href="https://www.3djuegos.com" target="_blank" class="btn">3DJuegos</a></li>
+      <li><a href="https://vandal.elespanol.com" target="_blank" class="btn">Vandal</a></li>
+      <li><a href="https://www.ign.com/es" target="_blank" class="btn">IGN España</a></li>
+    </ul>
+  </section>
 
-<section>
-<h2>⚽ Fútbol</h2>
-<ul>
-  <li><a href="https://www.tycsports.com" target="_blank" class="btn">TyC Sports</a></li>
-  <li><a href="https://www.ole.com.ar" target="_blank" class="btn">Olé</a></li>
-  <li><a href="https://www.espn.com.ar/futbol" target="_blank" class="btn">ESPN Fútbol</a></li>
-</ul>
-</section>
+  <!-- ANUNCIO 2 -->
+  <script>
+    atOptions = {
+      'key' : '90fec3c7e7e5b6f658319a30c3dac0b9',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highperformanceformat.com/90fec3c7e7e5b6f658319a30c3dac0b9/invoke.js"></script>
 
-<section>
-<h2>🌎 Clima Mundial</h2>
-<p>Pronóstico general por regiones.</p>
-<a href="https://www.weather.com" target="_blank" class="btn">Ver clima mundial</a>
-</section>
+  <section>
+    <h2>⚽ Fútbol</h2>
+    <ul>
+      <li><a href="https://www.tycsports.com" target="_blank" class="btn">TyC Sports</a></li>
+      <li><a href="https://www.ole.com.ar" target="_blank" class="btn">Olé</a></li>
+      <li><a href="https://www.espn.com.ar/futbol" target="_blank" class="btn">ESPN Fútbol</a></li>
+      <li><a href="https://www.futebolbrasileiro.com.br" target="_blank" class="btn">Fútbol Brasil</a></li>
+    </ul>
+  </section>
 
-<section>
-<h2>💰 Economía y Criptomonedas</h2>
-<a href="https://www.coingecko.com" target="_blank" class="btn">Ver precios cripto</a>
-</section>
+  <section>
+    <h2>🌎 Clima Mundial</h2>
+    <p>Pronóstico general por regiones.</p>
+    <a href="https://www.weather.com" target="_blank" class="btn">Ver clima mundial</a>
+  </section>
 
-<section>
-<h2>📂 Juegos (Descargas)</h2>
-<p>La carpeta de juegos, organizada por plataformas, pueden pedir juegos y todo tipo de apps al email o redes sociales.</p>
+  <section>
+    <h2>💰 Economía y Criptomonedas</h2>
+    <a href="https://www.coingecko.com" target="_blank" class="btn">Ver precios cripto</a>
+  </section>
 
-<div class="box">
-<h3>📱 Juegos para Celular</h3>
-<ul>
-  <li><a href="https://link-target.net/2641451/CiclJZDOu1wU" target="_blank" class="btn">Spotify Premium</a></li>
-  <li><a href="https://link-hub.net/2641451/LepqCRp8yZJa" target="_blank" class="btn">Minecraft</a></li>
-  <li><a href="https://link-hub.net/2641451/mxRYN9Jq2avR" target="_blank" class="btn">PVZ Fusión</a></li>
-  <li><a href="https://link-target.net/2641451/DZujxAB6ZHlv" target="_blank" class="btn">FNAF 1</a></li>
-</ul>
-</div>
+  <section>
+    <h2>📂 Juegos (Descargas)</h2>
+    <p>La carpeta de juegos, organizada por plataformas, pueden pedir juegos y todo tipo de apps al email o redes sociales.</p>
 
-<div class="box">
-<h3>💻 Juegos para PC</h3>
-<p>Próximamente…</p>
-</div>
-</section>
+    <div class="box">
+      <h3>📱 Juegos para Celular</h3>
+      <ul>
+        <li><a href="https://link-target.net/2641451/CiclJZDOu1wU" target="_blank" class="btn">Spotify Premium</a></li>
+        <li><a href="https://link-hub.net/2641451/LepqCRp8yZJa" target="_blank" class="btn">Minecraft</a></li>
+        <li><a href="https://link-hub.net/2641451/mxRYN9Jq2avR" target="_blank" class="btn">PVZ Fusión</a></li>
+        <li><a href="https://link-target.net/2641451/DZujxAB6ZHlv" target="_blank" class="btn">FNAF 1</a></li>
+      </ul>
+    </div>
 
-<section>
-<h2>📱 Contacto</h2>
-<p>▶️ YouTube: <a href="https://www.youtube.com/@franciscothiago202" target="_blank" style="color:#00ff99;">franciscothiago202</a></p>
-<p>📧 Email: <a href="mailto:lopeztellofrancisco789@gmail.com" style="color:#00ff99;">lopeztellofrancisco789@gmail.com</a></p>
-<p>Instagram: <a href="https://www.instagram.com/franciscothiago202" target="_blank" style="color:#00ff99;">@franciscothiago202</a></p>
-<p>Alias MercadoPago: <b>francisco.tlt</b></p>
-</section>
+    <div class="box">
+      <h3>💻 Juegos para PC</h3>
+      <p>Próximamente…</p>
+    </div>
+  </section>
 
-<footer>
-<p>© 2026 - T0D0 N0T1C1AS</p>
-<p>👀 Visitas: <img src="https://visitor-badge.laobi.icu/badge?page_id=t0d0n0t1c1as.github.io"></p>
-</footer>
+  <section>
+    <h2>📱 Contacto</h2>
+    <p>▶️ YouTube: <a href="https://www.youtube.com/@franciscothiago202" target="_blank" style="color:#00ff99;">franciscothiago202</a></p>
+    <p>📧 Email: <a href="mailto:lopeztellofrancisco789@gmail.com" style="color:#00ff99;">lopeztellofrancisco789@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/franciscothiago202" target="_blank" style="color:#00ff99;">@franciscothiago202</a></p>
+    <p>Alias MercadoPago: <b>francisco.tlt</b></p>
+  </section>
+
+  <footer>
+    <p>© 2026 - T0D0 N0T1C1AS</p>
+    <p>👀 Visitas: <img src="https://visitor-badge.laobi.icu/badge?page_id=t0d0n0t1c1as.github.io"></p>
+  </footer>
 
 </body>
-  </html>
+</html>
