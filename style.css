@@ -6,3 +6,45 @@ body{
 h1{
   color:#00ff99;
 }
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px; /* texto un poco más grande en tablet */
+  }
+  header img {
+    max-width: 100px; /* logo más pequeño */
+  }
+  .juegos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .btn {
+    padding: 8px 12px; /* botones más pequeños */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px; /* texto en móvil */
+  }
+  header img {
+    max-width: 80px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  section {
+    padding: 12px; /* menos espacio */
+  }
+  .juegos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  .btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
