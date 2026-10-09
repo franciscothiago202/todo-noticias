@@ -96,8 +96,19 @@ footer {
   color: #fff;
 }
 
-<link rel="stylesheet" href="style.css"
-
+/* Halloween */
+html { scroll-behavior: smooth; }
+body { background: radial-gradient(ellipse at top, #24102f 0, #0f0f0f 55%); }
+header { border-bottom: 2px solid #ff7518; }
+header h1, h2 { color: #ff8c1a; }
+header p { color: #f3d9ff; }
+.halloween { max-width: 760px; margin: 18px auto 0; padding: 12px 16px; border: 1px solid #ff7518; border-radius: 10px; background: #1b1022; color: #ffd6a5; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 12px; background: #170d1d; }
+nav a { color: #ffd6a5; text-decoration: none; padding: 8px 10px; border: 1px solid #68405f; border-radius: 6px; }
+nav a:hover, nav a:focus { background: #ff7518; color: #160c18; }
+.btn { background: #ff8c1a; }
+.juego-item { border: 1px solid #392240; }
+@media (max-width: 600px) { section { padding: 16px; } .btn { max-width: 100%; box-sizing: border-box; } .juegos-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; } }
 </style>
 </head>
 
@@ -112,7 +123,11 @@ style="position:absolute; top:15px; left:15px; width:45px; z-index:999;">
   <h1>T0D0 N0T1C1AS</h1>
   <div class="update">Última actualización: 09-10-2026 </div>
   <p>Noticias, Juegos, Clima y Economía en un solo lugar</p>
+  <div class="halloween">🎃 ¡Especial de Halloween! Juegos de terror, novedades y diversión para esta temporada. 👻</div>
 </header>
+<nav aria-label="Navegación principal">
+  <a href="#noticias">Noticias</a><a href="#juegos">Descargas</a><a href="#roblox">Roblox</a><a href="#steam">Steam</a><a href="#contacto">Contacto</a>
+</nav>
 
 <script>
   atOptions = {
@@ -126,14 +141,14 @@ style="position:absolute; top:15px; left:15px; width:45px; z-index:999;">
 <script src="https://www.highperformanceformat.com/de94e9f13e56aa02b4a0cf4b0bcfac22/invoke.js"></script>
 
 
-<section>
+<section id="noticias">
 <h2>📰 Noticias Generales</h2>
 <p>Las noticias más importantes de Argentina y el mundo.</p>
 <a href="https://news.google.com" target="_blank" class="btn">Ver noticias</a>
 </section>
 
 <section>
-<h2>📰 Formula 1</h2>
+<h2>🏁 Fórmula 1</h2>
 <b>Puesto, Pocisiones y Mas</b> Lando Norris (McLaren) se coronó campeón del mundo de pilotos con 423 puntos, ganando por solo 2 puntos a Max Verstappen (Red Bull), quien venció en el GP de Abu Dhabi. Oscar Piastri completó el podio del campeonato con 410 puntos.
 
 McLaren también ganó el campeonato de constructores con 833 puntos, dominando la temporada. Mercedes (469) y Red Bull (451) ocuparon el segundo y tercer puesto, respectivamente.
@@ -198,8 +213,9 @@ atOptions = {
 </script>
 <script src="https://www.highperformanceformat.com/20dcdcffa35026bb6d19eaea4ade75fb/invoke.js"></script>
 
-<section>
+<section id="juegos">
 <h2>📂 Juegos y Apps (Descargas)</h2>
+<p>Los botones de descarga pueden llevar a sitios externos. Revisá el archivo y su origen antes de instalarlo.</p>
 
 <h3>📱 Juegos y Apps para Celular</h3>
 
@@ -363,7 +379,7 @@ atOptions = {
 </div>
 </section>
 
-<section>
+<section id="roblox">
   <h2>🟥 Roblox – Juegos Populares</h2>
   <p>Algunos de los juegos con más jugadores activos en Roblox, según el ranking consultado el 5 de octubre de 2026.</p>
 
@@ -381,7 +397,7 @@ atOptions = {
   </div>
 </section>
 
-<section>
+<section id="steam">
 <h2>💸 Ofertas de Steam</h2>
 <p>Las mejores ofertas semanales de Steam con grandes descuentos.</p>
 <a href="https://store.steampowered.com/specials" target="_blank" class="btn">
@@ -390,11 +406,11 @@ Ver ofertas de Steam
 </section>
 
 
-<section>
+<section id="contacto">
 <h2>📱 Contacto</h2>
 <p>📸 Instagram: <a href="https://instagram.com/franciscothiago202" target="_blank" style="color:#00ff99;">@franciscothiago202</a></p>
 <p>▶️ YouTube: <a href="https://www.youtube.com/@franciscothiago202" class="btn" target="_blank">Canal</a></p>
-<p>📧 Email: lopeztellofrancisco789@gmail.com</p>
+<p>📧 Email: <a href="mailto:lopeztellofrancisco789@gmail.com" style="color:#ffb347;">lopeztellofrancisco789@gmail.com</a></p>
 <p>💰 MercadoPago: <b>francisco.tlt</b></p>
 </section>
 <section style="text-align:center;">
