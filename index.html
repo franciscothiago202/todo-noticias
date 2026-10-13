@@ -139,6 +139,28 @@ nav a:hover, nav a:focus { background: #ff7518; color: #160c18; }
 .f1-round strong { display: block; color: #fff; margin-bottom: 4px; }
 .f1-round span { color: #c4b8c9; font-size: 13px; }
 .f1-note { color: #aaa; font-size: 13px; line-height: 1.5; }
+
+/* Accesos, búsqueda, novedades y uso en móvil */
+.quick-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 12px; margin-top: 16px; }
+.quick-link { display: block; height: 100%; box-sizing: border-box; background: #17121b; border: 1px solid #68405f; border-radius: 10px; padding: 15px; color: #ffd6a5; text-decoration: none; font-weight: bold; }
+.quick-link:hover, .quick-link:focus-visible { border-color: #ff8c1a; background: #24102f; }
+.game-search { width: 100%; max-width: 560px; box-sizing: border-box; padding: 13px 14px; margin: 10px 0 18px; border: 1px solid #68405f; border-radius: 8px; background: #111; color: #fff; font: inherit; }
+.game-search:focus-visible { outline: 2px solid #ff8c1a; outline-offset: 2px; }
+.game-empty { color: #ffd6a5; background: #1b1022; padding: 12px; border-radius: 8px; }
+.share-link { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; box-sizing: border-box; padding: 9px 12px; border: 1px solid #68405f; border-radius: 7px; color: #ffd6a5; text-decoration: none; font-weight: bold; }
+.share-link:hover, .share-link:focus-visible { background: #ff8c1a; color: #160c18; outline: none; }
+.featured-item { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.featured-item .featured-card { width: 100%; flex: 1; }
+.site-updates { background: #151119; border: 1px solid #392240; border-radius: 10px; padding: 16px; }
+.site-updates time { color: #ffb347; font-weight: bold; }
+@media (max-width: 600px) {
+  nav { position: relative; gap: 6px; }
+  nav a { min-height: 40px; display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; }
+  .quick-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .quick-link { padding: 12px; }
+  .featured-art { height: 155px; }
+  .f1-table th, .f1-table td { padding: 9px 8px; }
+}
 </style>
 </head>
 
@@ -156,7 +178,7 @@ style="position:absolute; top:15px; left:15px; width:45px; z-index:999;">
   <div class="halloween">🎃 ¡Especial de Halloween! Juegos de terror, novedades y diversión para esta temporada. 👻</div>
 </header>
 <nav aria-label="Navegación principal">
-  <a href="#noticias">Noticias</a><a href="#juegos">Descargas</a><a href="#roblox">Roblox</a><a href="#steam">Steam</a><a href="#contacto">Contacto</a>
+  <a href="#noticias">Noticias</a><a href="#mas-visto">Atajos</a><a href="#juegos">Descargas</a><a href="#roblox">Roblox</a><a href="#steam">Steam</a><a href="#contacto">Contacto</a>
 </nav>
 
 <script>
@@ -176,24 +198,35 @@ style="position:absolute; top:15px; left:15px; width:45px; z-index:999;">
 <p>Las noticias más importantes de Argentina y el mundo.</p>
 <a href="https://news.google.com" target="_blank" class="btn">Ver noticias</a>
 </section>
+<section id="mas-visto" aria-labelledby="atajos-titulo">
+<h2 id="atajos-titulo">⭐ Atajos populares</h2>
+<p>Entrá directo a las secciones principales del sitio.</p>
+<div class="quick-links">
+  <a class="quick-link" href="#destacadas-titulo">📰 Noticias destacadas</a>
+  <a class="quick-link" href="#f1-titulo">🏁 Fórmula 1</a>
+  <a class="quick-link" href="#juegos">🎮 Juegos y apps</a>
+  <a class="quick-link" href="#roblox">🟥 Roblox</a>
+  <a class="quick-link" href="#steam">💸 Ofertas de Steam</a>
+</div>
+</section>
 <section class="featured-news" aria-labelledby="destacadas-titulo">
   <h2 id="destacadas-titulo">🔥 Noticias destacadas</h2>
   <p class="featured-intro">Una selección de actualidad regional con fecha y fuente visibles. Las ilustraciones son originales y decorativas; abrí cada tarjeta para leer la cobertura completa del medio.</p>
   <div class="featured-grid">
-    <a class="featured-card" href="https://www.ellitoral.com.ar/sociedad/2026-10-12-20-21-0-cerraron-preventivamente-el-paso-internacional-ituzaingo-ayolas" target="_blank" rel="noopener noreferrer" aria-label="Leer en El Litoral: Cerraron preventivamente el paso internacional Ituzaingó-Ayolas">
+    <div class="featured-item"><a class="featured-card" href="https://www.ellitoral.com.ar/sociedad/2026-10-12-20-21-0-cerraron-preventivamente-el-paso-internacional-ituzaingo-ayolas" target="_blank" rel="noopener noreferrer" aria-label="Leer en El Litoral: Cerraron preventivamente el paso internacional Ituzaingó-Ayolas">
       <svg class="featured-art" viewBox="0 0 640 350" role="img" aria-label="Ilustración de un puente fronterizo sobre un río al atardecer" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bridge-sky" x2="0" y2="1"><stop stop-color="#482246"/><stop offset="1" stop-color="#f07825"/></linearGradient></defs><rect width="640" height="350" fill="url(#bridge-sky)"/><circle cx="500" cy="90" r="42" fill="#ffd28a" opacity=".9"/><path d="M0 225 Q150 195 300 230 T640 218 V350 H0Z" fill="#28152e"/><path d="M0 270 Q160 250 320 274 T640 260 V350 H0Z" fill="#162d3b"/><path d="M55 213 H585 M100 213 V155 M540 213 V155 M100 158 Q320 90 540 158 M145 147 V213 M205 127 V213 M265 114 V213 M325 110 V213 M385 116 V213 M445 132 V213 M495 147 V213" fill="none" stroke="#ffd6a5" stroke-width="8" stroke-linecap="round"/><path d="M0 306 Q100 289 200 306 T400 306 T640 300" fill="none" stroke="#ff8c1a" stroke-width="4" opacity=".7"/></svg>
       <div class="featured-copy"><span class="featured-label">Región · Corrientes</span><h3>Cerraron preventivamente el paso internacional Ituzaingó-Ayolas</h3><p>El cruce fronterizo sobre la represa fue interrumpido de forma preventiva por el aumento del caudal del río Paraná.</p><div class="featured-meta">El Litoral · 12 de octubre de 2026</div><div class="featured-link">Leer la noticia en El Litoral ↗</div></div>
-    </a>
-    <a class="featured-card" href="https://www.ellitoral.com.ar/sociedad/2026-10-12-19-28-0-yacyreta-recibe-28-000-m-s-el-comunicado-de-la-entidad-tras-abrir-sus-compuertas" target="_blank" rel="noopener noreferrer" aria-label="Leer en El Litoral: Yacyretá recibe 28.000 metros cúbicos por segundo">
+    </a></div>
+    <div class="featured-item"><a class="featured-card" href="https://www.ellitoral.com.ar/sociedad/2026-10-12-19-28-0-yacyreta-recibe-28-000-m-s-el-comunicado-de-la-entidad-tras-abrir-sus-compuertas" target="_blank" rel="noopener noreferrer" aria-label="Leer en El Litoral: Yacyretá recibe 28.000 metros cúbicos por segundo">
       <svg class="featured-art" viewBox="0 0 640 350" role="img" aria-label="Ilustración de una represa hidroeléctrica liberando agua" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="dam-sky" x2="0" y2="1"><stop stop-color="#24102f"/><stop offset="1" stop-color="#a84c2b"/></linearGradient><linearGradient id="water" x2="0" y2="1"><stop stop-color="#ff9c46"/><stop offset="1" stop-color="#32869a"/></linearGradient></defs><rect width="640" height="350" fill="url(#dam-sky)"/><circle cx="125" cy="86" r="35" fill="#ffcf83" opacity=".8"/><path d="M0 154 Q120 120 240 154 T480 148 T640 155 V350 H0Z" fill="#30203b"/><path d="M105 148 L535 148 L492 245 L148 245Z" fill="#b4a5a6"/><path d="M205 180 V245 M320 180 V245 M435 180 V245" stroke="#ff8c1a" stroke-width="14"/><path d="M205 242 C180 280 230 285 205 350 H300 C280 305 330 287 320 242Z M320 242 C300 280 350 290 330 350 H425 C410 305 455 280 435 242Z" fill="url(#water)"/><path d="M0 295 Q110 275 220 298 T440 294 T640 300 V350 H0Z" fill="#164257" opacity=".8"/><path d="M30 318 Q130 300 225 320 T420 318 T610 319" fill="none" stroke="#b8edee" stroke-width="5" opacity=".7"/></svg>
       <div class="featured-copy"><span class="featured-label">Ambiente · Yacyretá</span><h3>Yacyretá informa un caudal de 28.000 m³/s y abre compuertas</h3><p>La entidad explicó que la maniobra busca reducir el impacto del incremento de caudales en el río Paraná.</p><div class="featured-meta">El Litoral · 12 de octubre de 2026</div><div class="featured-link">Leer la noticia en El Litoral ↗</div></div>
-    </a>
+    </a></div>
   </div>
   <p class="featured-note">Las noticias pueden cambiar; revisá la fecha y el medio al abrir la fuente.</p>
 </section>
 
 <section>
-<h2>🏁 Fórmula 1</h2>
+<h2 id="f1-titulo">🏁 Fórmula 1</h2>
 <p>La temporada 2026 sigue en marcha: después del Gran Premio de Singapur, disputado el 11 de octubre, quedan seis fechas. Acá tenés la pelea por el campeonato y las próximas carreras.</p>
 <p class="f1-note"><strong>Actualizado al 13 de octubre de 2026</strong> · Posiciones oficiales después de Singapur.</p>
 <div class="f1-panel">
@@ -285,6 +318,9 @@ atOptions = {
 <section id="juegos">
 <h2>📂 Juegos y Apps (Descargas)</h2>
 <p>Los botones de descarga pueden llevar a sitios externos. Revisá el archivo y su origen antes de instalarlo.</p>
+<label for="buscar-juego"><strong>🔎 Buscar un juego o app</strong></label>
+<input id="buscar-juego" class="game-search" type="search" placeholder="Ej.: Minecraft, FNAF, Stardew Valley…" autocomplete="off">
+<p id="sin-resultados-juegos" class="game-empty" role="status" hidden>No encontramos juegos con ese nombre. Probá otra búsqueda.</p>
 
 <h3>📱 Juegos y Apps para Celular</h3>
 
@@ -490,11 +526,73 @@ Contador automático de visitas
 </p>
 </section>
   
+
+<section aria-labelledby="novedades-titulo">
+<h2 id="novedades-titulo">🆕 Novedades del sitio</h2>
+<div class="site-updates">
+  <p><time datetime="2026-10-13">13 de octubre de 2026</time></p>
+  <ul>
+    <li>Se agregó una selección de noticias destacadas con fuente y fecha.</li>
+    <li>Se amplió Fórmula 1 con posiciones, próximas carreras y enlaces oficiales.</li>
+    <li>Se incorporaron accesos rápidos, buscador de juegos y opciones para compartir.</li>
+  </ul>
+</div>
+</section>
 <footer>
 <p>© 2026 - T0D0 N0T1C1AS</p>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=t0d0n0t1c1as.github.io">
 </footer>
 
+<script>
+(function () {
+  const pageUrl = window.location.href.split('#')[0];
+  const gameSearch = document.getElementById('buscar-juego');
+  const emptyMessage = document.getElementById('sin-resultados-juegos');
+  const games = Array.from(document.querySelectorAll('.juego-item'));
+
+  if (gameSearch) {
+    gameSearch.addEventListener('input', function () {
+      const query = this.value.trim().toLocaleLowerCase('es');
+      let visibleCount = 0;
+      games.forEach(function (game) {
+        const text = (game.innerText + ' ' + (game.querySelector('img')?.alt || '')).toLocaleLowerCase('es');
+        const visible = text.includes(query);
+        game.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+      if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
+    });
+  }
+
+  document.querySelectorAll('.featured-item').forEach(function (item) {
+    const card = item.querySelector('.featured-card');
+    if (!card) return;
+    const title = card.querySelector('h3')?.innerText || 'Noticia destacada';
+    const share = document.createElement('a');
+    share.className = 'share-link';
+    share.target = '_blank';
+    share.rel = 'noopener noreferrer';
+    share.setAttribute('aria-label', 'Compartir ' + title + ' por WhatsApp');
+    share.href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(title + ' — ' + card.href);
+    share.textContent = 'Compartir noticia por WhatsApp';
+    item.appendChild(share);
+  });
+
+  document.querySelectorAll('.juego-item').forEach(function (game) {
+    const title = game.querySelector('h4')?.innerText || game.querySelector('img')?.alt || 'Juego';
+    const share = document.createElement('a');
+    share.className = 'share-link';
+    share.target = '_blank';
+    share.rel = 'noopener noreferrer';
+    share.setAttribute('aria-label', 'Compartir ' + title + ' por WhatsApp');
+    share.href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(title + ' — ' + pageUrl + '#juegos');
+    share.textContent = 'Compartir';
+    const download = game.querySelector('a.btn');
+    if (download) download.insertAdjacentElement('afterend', share);
+    else game.appendChild(share);
+  });
+})();
+</script>
 </body>
   </html>
 
