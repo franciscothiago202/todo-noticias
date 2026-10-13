@@ -124,6 +124,21 @@ nav a:hover, nav a:focus { background: #ff7518; color: #160c18; }
 .featured-meta { color: #b7a9bb; font-size: 13px; }
 .featured-link { color: #ff9b36; font-weight: bold; margin-top: 12px; }
 .featured-note { color: #aaa; font-size: 13px; margin: 14px 0 0; }
+
+/* F1 */
+.f1-panel { background: linear-gradient(135deg, #1b1022, #111); border: 1px solid #4c2938; border-radius: 12px; padding: 18px; margin: 18px 0; }
+.f1-panel h3 { color: #ff8c1a; margin-top: 0; }
+.f1-table-wrap { overflow-x: auto; }
+.f1-table { width: 100%; border-collapse: collapse; min-width: 420px; }
+.f1-table th, .f1-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #392240; }
+.f1-table th { color: #ffb347; font-size: 13px; }
+.f1-table td:last-child, .f1-table th:last-child { text-align: right; }
+.f1-table tr.f1-highlight td { color: #ffd6a5; font-weight: bold; }
+.f1-upcoming { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 10px; margin-top: 12px; }
+.f1-round { background: #111; border-left: 3px solid #ff7518; border-radius: 6px; padding: 12px; }
+.f1-round strong { display: block; color: #fff; margin-bottom: 4px; }
+.f1-round span { color: #c4b8c9; font-size: 13px; }
+.f1-note { color: #aaa; font-size: 13px; line-height: 1.5; }
 </style>
 </head>
 
@@ -179,13 +194,37 @@ style="position:absolute; top:15px; left:15px; width:45px; z-index:999;">
 
 <section>
 <h2>🏁 Fórmula 1</h2>
-<b>Puesto, Pocisiones y Mas</b> Lando Norris (McLaren) se coronó campeón del mundo de pilotos con 423 puntos, ganando por solo 2 puntos a Max Verstappen (Red Bull), quien venció en el GP de Abu Dhabi. Oscar Piastri completó el podio del campeonato con 410 puntos.
-
-McLaren también ganó el campeonato de constructores con 833 puntos, dominando la temporada. Mercedes (469) y Red Bull (451) ocuparon el segundo y tercer puesto, respectivamente.
-
-La temporada tuvo 24 Grandes Premios, comenzando en Australia el 16 de marzo y finalizando en Abu Dhabi el 7 de diciembre, con seis carreras sprint incluidas.
-<a href="https://www.formula1.com/" target="_blank" class="btn">F1</a>
-<a href="https://www.espn.com.ar/deporte-motor/f1/posiciones" target="_blank" class="btn">ESPN</a>
+<p>La temporada 2026 sigue en marcha: después del Gran Premio de Singapur, disputado el 11 de octubre, quedan seis fechas. Acá tenés la pelea por el campeonato y las próximas carreras.</p>
+<p class="f1-note"><strong>Actualizado al 13 de octubre de 2026</strong> · Posiciones oficiales después de Singapur.</p>
+<div class="f1-panel">
+  <h3>🏆 Campeonato de pilotos</h3>
+  <div class="f1-table-wrap">
+    <table class="f1-table">
+      <thead><tr><th>Pos.</th><th>Piloto</th><th>Equipo</th><th>Puntos</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>340</td></tr>
+        <tr><td>2</td><td>George Russell</td><td>Mercedes</td><td>238</td></tr>
+        <tr><td>3</td><td>Lewis Hamilton</td><td>Ferrari</td><td>229</td></tr>
+        <tr><td>4</td><td>Max Verstappen</td><td>Red Bull</td><td>221</td></tr>
+        <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>215</td></tr>
+        <tr class="f1-highlight"><td>12</td><td>Franco Colapinto 🇦🇷</td><td>Alpine</td><td>27</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="f1-panel">
+  <h3>📅 Próximos Grandes Premios</h3>
+  <div class="f1-upcoming">
+    <div class="f1-round"><strong>Estados Unidos · Austin</strong><span>23 al 25 de octubre</span></div>
+    <div class="f1-round"><strong>Ciudad de México</strong><span>30 de octubre al 1 de noviembre</span></div>
+    <div class="f1-round"><strong>São Paulo · Brasil</strong><span>6 al 8 de noviembre</span></div>
+  </div>
+  <p class="f1-note">En el GP de Singapur ganó Max Verstappen. La próxima carrera será en el Circuito de las Américas, en Austin.</p>
+</div>
+<a href="https://www.formula1.com/" target="_blank" rel="noopener noreferrer" class="btn">F1</a>
+<a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noopener noreferrer" class="btn">Tabla oficial</a>
+<a href="https://www.formula1.com/en/racing/2026" target="_blank" rel="noopener noreferrer" class="btn">Calendario</a>
+<a href="https://www.espn.com.ar/deporte-motor/f1/posiciones" target="_blank" rel="noopener noreferrer" class="btn">ESPN</a>
 </section>
 
 <script async="async" data-cfasync="false" src="https://pl28409941.effectivegatecpm.com/5f782ebbee9cad6bbb6bcf466bac0803/invoke.js"></script>
